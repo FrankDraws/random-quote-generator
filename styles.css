@@ -17,7 +17,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
@@ -29,8 +28,8 @@ body {
 }
 
 h1 {
-    font-family: "Helvetica", sans-serif;
-    margin: 0 0 1em;
+    font-family: "Helvetica", sans;
+    margin: 0 0 0.5em;
     padding: 0;
 }
 #quote-display {
@@ -44,6 +43,8 @@ button {
     background-color: #007bff;
     color: white;
     cursor: pointer;
+    font-size: 1.3em;
+    font-family: "Helvetica", sans-serif;
 }
 
 button:hover {
@@ -67,7 +68,7 @@ p {
 
 h1 {
     --fluid-type-min: 1.75rem; /* Increased from 1.5rem to 1.75rem */
-    --fluid-type-max: 2.75rem; /* Increased from 2.5rem to 2.75rem */
+    --fluid-type-max: 3.75rem; /* Increased from 2.5rem to 2.75rem */
     --fluid-type-target: 5vw;
 
     max-width: 30ch;
@@ -75,7 +76,7 @@ h1 {
 
 p {
     --fluid-type-min: 1.125rem; /* Added a variable for paragraph */
-    --fluid-type-max: 1.5rem; /* Added a variable for paragraph */
+    --fluid-type-max: 1.8rem; /* Added a variable for paragraph */
     --fluid-type-target: 3.5vw; /* Adjusted fluid target for paragraph */
 
     max-width: 60ch;
