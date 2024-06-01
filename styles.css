@@ -1,5 +1,6 @@
 /*
     Random code generator
+    Author: Code Copilot (ChatGPT) + Frank J. Quinones
 */
 body,
 html {
@@ -28,6 +29,7 @@ body {
 }
 
 h1 {
+    font-family: "Helvetica", sans-serif;
     margin: 0 0 1em;
     padding: 0;
 }
@@ -51,10 +53,10 @@ button:hover {
 /*
   Font Clamp
   https://piccalil.li/tutorial/fluid-typography-with-css-clamp/
+
+  Edits by Code Copilot (ChatGPT)
 */
 h1,
-h2,
-h3,
 p {
     font-size: clamp(
         var(--fluid-type-min, 1rem),
@@ -62,30 +64,20 @@ p {
         var(--fluid-type-max, 1.3rem)
     );
 }
+
 h1 {
-    --fluid-type-min: 1.5rem;
-    --fluid-type-max: 2.5rem;
+    --fluid-type-min: 1.75rem; /* Increased from 1.5rem to 1.75rem */
+    --fluid-type-max: 2.75rem; /* Increased from 2.5rem to 2.75rem */
     --fluid-type-target: 5vw;
 
     max-width: 30ch;
 }
 
-h2 {
-    --fluid-type-min: 1.8rem;
-    --fluid-type-max: 3rem;
-}
-
-h3 {
-    --fluid-type-min: 1.5rem;
-    --fluid-type-max: 2.5rem;
-}
-
-h2,
-h3 {
-    max-width: 30ch;
-}
-
 p {
+    --fluid-type-min: 1.125rem; /* Added a variable for paragraph */
+    --fluid-type-max: 1.5rem; /* Added a variable for paragraph */
+    --fluid-type-target: 3.5vw; /* Adjusted fluid target for paragraph */
+
     max-width: 60ch;
     line-height: 1.8;
 }
