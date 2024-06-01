@@ -53,7 +53,7 @@ h1 {
     /* font-family: "Helvetica", sans; */
     font-family: "Playfair", serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
     font-variation-settings: "wdth" 100;
     margin: 0 0 0.5em;
@@ -66,8 +66,9 @@ h1 {
 
 button {
     padding: 0.5em 1.5em;
+    margin-bottom: 1em;
     border: none;
-    border-radius: 15px;
+    border-radius: 9px;
     background-color: #5a189a;
     color: white;
     cursor: pointer;
@@ -78,13 +79,13 @@ button {
 }
 
 button:hover {
-    background-color: #007fff;
+    background-color: #ff7f50;
+    color: #3c096c;
+    font-weight: 400;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
-    /* border-radius: 25px; */
     transition: all 0.7s;
 }
 p {
-    /* color: #4a2706; */
     font-family: "Vesper Libre", serif;
     font-weight: 800;
     /*   font-size: calc(18px + (100 - 18) * ((100vw - 300px) / (1600 - 300))); */
