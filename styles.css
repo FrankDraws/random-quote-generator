@@ -8,16 +8,9 @@ html {
     width: 100%;
     box-sizing: border-box;
 }
-/* body {
-    background-color: #efefef;
-    color: #3c096c;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-} */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Georgia", serif;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
@@ -27,13 +20,17 @@ body {
 }
 
 .container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    padding: 1.5em;
+    text-align: left;
+    width: 80ch;
+    height: 50ch;
+    /* outline: 1px solid red; */
 }
 
+h1 {
+    margin: 0 0 1em;
+    padding: 0;
+}
 #quote-display {
     margin-bottom: 20px;
 }
@@ -66,7 +63,6 @@ p {
     );
 }
 h1 {
-    font-family: "Bree Serif", serif;
     --fluid-type-min: 1.5rem;
     --fluid-type-max: 2.5rem;
     --fluid-type-target: 5vw;
@@ -91,6 +87,5 @@ h3 {
 
 p {
     max-width: 60ch;
-    font-family: "Lora", serif;
     line-height: 1.8;
 }

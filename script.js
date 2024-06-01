@@ -11,7 +11,7 @@ function generateQuote() {
             document.getElementById("quote-text").textContent =
                 `"${quote.quote}"`;
             document.getElementById("quote-author").textContent =
-                `- ${quote.author}`;
+                `~ ${quote.author}`;
         })
         .catch((error) => {
             console.error("Error fetching the quotes:", error);
