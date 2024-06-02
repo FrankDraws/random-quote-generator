@@ -83,6 +83,14 @@ button:hover {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease 0s;
 }
+@media (hover: none) and (pointer: coarse) {
+    /* Remove :hover on mobile */
+    a:hover {
+        background-color: #5a189a;
+        color: white;
+    }
+}
+
 p {
     font-weight: 800;
     font-size: clamp(1rem, 40px, 4rem);
