@@ -40,13 +40,10 @@ body {
     padding: 1.5em;
     text-align: left;
     width: 80ch;
-    height: 50ch;
-    /* outline: 1px solid red; */
+    height: max-content;
 }
 
 h1 {
-    /* font-family: "Helvetica", sans; */
-    /* font-family: "Playfair", serif; */
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
