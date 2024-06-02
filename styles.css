@@ -40,7 +40,7 @@ body {
 .container {
     padding: 1.5em;
     text-align: left;
-    max-width: 80ch;
+    width: 80ch;
 }
 
 h1 {
