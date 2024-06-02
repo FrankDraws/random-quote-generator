@@ -38,11 +38,10 @@ body {
 .container {
     padding: 1.5em;
     text-align: left;
-    /* width: 80ch; */
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     .container {
-        max-width: 70ch;
+        width: 70ch;
     }
 }
 h1 {
