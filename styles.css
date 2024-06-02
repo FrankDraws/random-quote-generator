@@ -7,16 +7,8 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
-}
-
-body {
-    font-family: "Vesper Libre", serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-
     background: hsla(16, 100%, 66%, 1);
     background: linear-gradient(
         45deg,
@@ -36,11 +28,19 @@ body {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF7F50", endColorstr="#F1DDCF", GradientType=1 );
 }
 
+body {
+    font-family: "Vesper Libre", serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    align-items: start;
+}
+
 .container {
     padding: 1.5em;
     text-align: left;
-    width: 80ch;
-    height: max-content;
+    max-width: 80ch;
+    /* height: max-content; */
 }
 
 h1 {
