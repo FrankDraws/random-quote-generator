@@ -28,7 +28,6 @@ html {
     );
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF7F50", endColorstr="#F1DDCF", GradientType=1 );
 }
-
 body {
     font-family: "Vesper Libre", serif;
     display: grid;
@@ -36,13 +35,11 @@ body {
     place-items: center;
     align-items: start;
 }
-
 .container {
     padding: 1.5em;
     text-align: left;
     width: 80ch;
 }
-
 h1 {
     font-optical-sizing: auto;
     font-weight: 900;
@@ -60,7 +57,6 @@ h1 {
 #quote-display {
     margin-bottom: 20px;
 }
-
 button {
     padding: 0.8em 1.7em 0.6em 1.7em;
     line-height: 1;
@@ -74,7 +70,6 @@ button {
     transition: all 0.4s;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-
 button:hover {
     background-color: #ff7f50;
     color: #3c096c;
@@ -84,9 +79,7 @@ button:hover {
 }
 p {
     font-weight: 800;
-    /*   font-size: calc(18px + (100 - 18) * ((100vw - 300px) / (1600 - 300))); */
     font-size: clamp(1rem, 40px, 4rem);
-    /*   font-size: calc(2.8em + 0.4vw); */
     line-height: calc(1.1em + 0.5vw);
     padding: 0;
 
@@ -96,6 +89,7 @@ p {
 
     text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 /*
   Font Clamp
   https://piccalil.li/tutorial/fluid-typography-with-css-clamp/
@@ -110,7 +104,6 @@ p {
         var(--fluid-type-max, 1.3rem)
     );
 }
-
 h1 {
     --fluid-type-min: 1.75rem; /* Increased from 1.5rem to 1.75rem */
     --fluid-type-max: 3.75rem; /* Increased from 2.5rem to 2.75rem */
@@ -118,7 +111,6 @@ h1 {
 
     max-width: 30ch;
 }
-
 p {
     --fluid-type-min: 1.125rem; /* Added a variable for paragraph */
     --fluid-type-max: 1.8rem; /* Added a variable for paragraph */
